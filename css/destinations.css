@@ -1,0 +1,36 @@
+section {
+    margin-top: 10vw;
+    padding-left: var(--mobile-margin);
+    padding-right: var(--mobile-margin);
+    gap: var(--mobile-margin);
+}
+
+h2 {
+    font-size: var(--heading-text-size-mobile);
+    font-weight: 550;
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--mobile-margin);
+}
+
+
+section ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    list-style: none;
+}
+
+section ul a {
+    width: 100%;
+}
+
+section ul img {
+    max-width: 100%;
+    border-radius: 5px;
+}

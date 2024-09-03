@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Travel agency: Homepage</title>
+    <meta name="description" content="Travel agency: Homepage">
+    <meta name="author" content="David Ivankov">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    >
+    <link
+      href="https://fonts.googleapis.com/css?family=Dancing+Script&family=Montserrat:400,700&&display=swap"
+      rel="stylesheet"
+    >
+    <link href="./css/header.css" rel="stylesheet" type="text/css">
+    <link href="./css/destinations.css" rel="stylesheet" type="text/css">
+    <link href="./css/footer.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <form class="head-item first">
+          <label for="search"><img src="./icons/search-white.svg">Search</label>
+        </form>
+        <div class="head-item middle">
+          <img src="./icons/globe-white.svg" alt="Logo">
+        </div>
+        <div class="head-item last">
+          <img src="./icons/three-bars-white.svg" alt="Menu">
+        </div>
+      </div>
+      <div class="hero">
+        <p class="small">Year long travel</p>
+        <h1>
+          Book your next<br>
+          destination
+        </h1>
+        <form class="hero-form">
+          <div>
+              <label for="destination" class="form-label">Destination</label>
+              <div class="input-group">
+                <select id="destination" class="form-select" name="destination">
+                    <option value="" disabled selected>Destination</option>
+                    <option value="Paris">Paris</option>
+                    <option value="Tokyo">Tokyo</option>
+                    <option value="Sidney">Sidney</option>
+                    <option value="San Francisco">San Francisco</option>
+                </select>
+              </div>
+          </div>
+          <div class="dates">
+              <div>
+                  <label for="fromDate" class="form-label">From</label>
+                  <div class="input-group">
+                    <input class="form-control" type="date" name="fromDate" id="fromDate">
+                    
+                  </div>
+              </div>
+              <div>
+                  <label for="toDate" class="form-label">To</label>
+                  <div class="input-group">
+                    <input type="date" name="toDate" class="form-control" id="toDate">
+                  </div>
+              </div>
+          </div>
+          <div>
+            <label for="guests" class="form-label">Guests</label>
+            <div class="input-group">
+              <input type="number" class="form-control" id="guests" name="guests" placeholder="2">
+            </div>
+          </div>
+          <div>
+              <button type="submit" class="btn btn-warning">
+                  <img src="./icons/arrow-right.svg" alt="">
+              </button>
+          </div>
+      </form>
+      </div>
+    </header>
+    <section>
+      <h2>Destinations</h2>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet, adventure travel mountains, beach
+          resorts and cultural experiences await. Pack your bags and get
+          ready to <strong>explore the world!</strong> From bustling cities to tranquil
+          countryside getaways, there's a destination for every type of
+          traveler.
+        </p>
+        <p>
+          If you're a culture lover, 
+          the historic cities of London and Edinburgh should be at the top of your list. 
+          Walk the streets of London's West End, 
+          marvel at the architecture of Big Ben and Buckingham Palace, 
+          and take in a show at the Globe Theatre. 
+          In Edinburgh, visit the Royal Mile, explore the castle, 
+          and sample the local fare at the city's world-famous restaurants.
+        </p>
+        <p>
+          For those seeking a bit of relaxation, head to the spas and
+          resorts of the English countryside. Indulge in a luxurious
+          massage or take a dip in a hot spring. If you're looking for
+          something a bit more active, strap on your hiking boots and
+          tackle the rugged trails of the coastal cliffs.
+        </p>
+      </div>
+      <ul>
+        <li class="destination-container">
+          <img src="./images/destinations/paris.jpg" alt="Paris">
+          <div class="overlay-text"><p>Paris</p><p>French</p></div>
+        </li>
+        <li class="destination-container">
+          <img src="./images/destinations/san-francisco.jpg" alt="San Francisco">
+          <div class="overlay-text"><p>San Francisco</p><p>USA</p></div>
+        </li>
+        <li class="destination-container">
+          <img src="./images/destinations/sydney.jpg" alt="Sidney">
+          <div class="overlay-text"><p>Sidney</p><p>Australia</p></div>
+        </li>
+        <li class="destination-container">
+          <img src="./images/destinations/tokyo.jpg" alt="Tokyo">
+          <div class="overlay-text"><p>Tokyo</p><p>Japan</p></div>
+        </li>
+      </ul>
+    </section>
+    <footer>
+      <h3>Links</h3>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#destinations">Destinations</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3>Newsletter</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+          euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
+        </p>
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control" name="email" id="email">
+            <span class="input-group-text"><img src="./icons/lastpass-tile.svg" alt=""></span>
+            <button class="btn btn-success subscribe">Subscribe <img src="./icons/arrow-right-white.svg" alt=""></button>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>

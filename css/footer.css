@@ -1,0 +1,18 @@
+.form-control {
+    width: 100%;
+    border-right: none;
+}
+
+.input-group-text img {
+    width: 16px;
+}
+
+.input-group-text {
+    background-color: white;
+    border-left: none;
+}
+
+.subscribe {
+    font-size: 16px;
+}
+
