@@ -20,14 +20,61 @@ section div {
 
 
 section ul {
+    padding: 0;
     display: grid;
+    gap: 2vw;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     list-style: none;
 }
 
-section ul a {
-    width: 100%;
+.destination-container {
+    position: relative;
+    display: inline-block;
+    width: 100%; 
+    max-width: 600px;
+    overflow: hidden; 
+    border-radius: 5px;
+}
+
+.overlay-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0; /* Align the text at the top of the image */
+    left: 0;
+    right: 0;
+    text-align: center; /* Center the text horizontally */
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Adjust the font size */
+    background: linear-gradient(
+        to top, 
+        rgba(0, 0, 0, 1) 0%,   /* Solid black at the bottom */
+        rgba(0, 0, 0, 0) 100%  /* Fully transparent at the top */
+    );
+    border-top: 1px b;
+    padding: 20px 20px; /* Padding around the text */
+    box-sizing: border-box; /* Ensures padding is included in the element's width */
+}
+
+.overlay-text p:first-child{
+    font-family: "Dancing Script", cursive;
+    font-weight: 700;
+    font-size: var(--heading-text-size-mobile);
+}
+.overlay-text p {
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+}
+
+.overlay-text p:nth-child(2){
+    font-size: var(--body-text-size-mobile);
+    color: gray;
 }
 
 section ul img {
