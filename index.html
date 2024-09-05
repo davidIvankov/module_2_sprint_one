@@ -47,7 +47,7 @@
           <div>
               <label for="destination" class="form-label">Destination</label>
               <div class="input-group">
-                <select id="destination" class="form-select" name="destination">
+                <select id="destination" class="form-select" name="destination" required>
                     <option value="" disabled selected>Destination</option>
                     <option value="Paris">Paris</option>
                     <option value="Tokyo">Tokyo</option>
@@ -58,23 +58,23 @@
           </div>
           <div class="dates">
               <div>
-                  <label for="fromDate" class="form-label">From</label>
+                  <label for="fromDate" class="form-label" >From</label>
                   <div class="input-group">
-                    <input class="form-control" type="date" name="fromDate" id="fromDate">
+                    <input class="form-control" type="date" required name="fromDate" id="fromDate">
                     
                   </div>
               </div>
               <div>
                   <label for="toDate" class="form-label">To</label>
                   <div class="input-group">
-                    <input type="date" name="toDate" class="form-control" id="toDate">
+                    <input type="date" name="toDate" class="form-control" id="toDate" required>
                   </div>
               </div>
           </div>
           <div>
             <label for="guests" class="form-label">Guests</label>
             <div class="input-group">
-              <input type="number" class="form-control" id="guests" name="guests" placeholder="2">
+              <input type="number" class="form-control" id="guests" name="guests" placeholder="2" min="1" max="10">
             </div>
           </div>
           
@@ -153,7 +153,7 @@
         </div>
         <form>
           <div class="input-group">
-            <input type="email" placeholder="Email" class="form-control" name="email" id="email">
+            <input type="email" placeholder="Email" class="form-control" name="email" id="email" required>
             <span class="input-group-text"><img src="./icons/lastpass-tile.svg" alt=""></span>
             <button class="btn btn-success subscribe">Subscribe <img src="./icons/arrow-right-white.svg" alt=""></button>
           </div>
