@@ -1,5 +1,5 @@
 section {
-    margin-top: 10vw;
+    padding-top: 10vw;
     padding-left: var(--mobile-margin);
     padding-right: var(--mobile-margin);
     gap: var(--mobile-margin);
@@ -20,12 +20,10 @@ section div {
 
 
 section ul {
-    padding: 0;
     display: grid;
     gap: 2vw;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    list-style: none;
 }
 
 .destination-container {
@@ -45,20 +43,20 @@ section ul {
     align-items: center;
     justify-content: center;
     position: absolute;
-    bottom: 0; /* Align the text at the top of the image */
+    bottom: 0; 
     left: 0;
     right: 0;
-    text-align: center; /* Center the text horizontally */
-    color: white; /* Text color */
-    font-size: 1.5rem; /* Adjust the font size */
+    text-align: center; 
+    color: white; 
+    font-size: 1.5rem; 
     background: linear-gradient(
         to top, 
-        rgba(0, 0, 0, 1) 0%,   /* Solid black at the bottom */
-        rgba(0, 0, 0, 0) 100%  /* Fully transparent at the top */
+        rgba(0, 0, 0, 1) 0%, 
+        rgba(0, 0, 0, 0) 100% 
     );
     border-top: 1px b;
-    padding: 20px 20px; /* Padding around the text */
-    box-sizing: border-box; /* Ensures padding is included in the element's width */
+    padding: 20px 20px; 
+    box-sizing: border-box; 
 }
 
 .overlay-text p:first-child{
@@ -80,4 +78,24 @@ section ul {
 section ul img {
     max-width: 100%;
     border-radius: 5px;
+}
+
+@media (min-width: 426px) {
+   section {
+        padding-top: 5vw;
+   } 
+    section div {
+        flex-direction: row;
+    }
+
+    section {
+        padding-left: var(--desktop-margin);
+        padding-right: var(--desktop-margin);
+    }
+
+    section ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }

@@ -31,6 +31,10 @@
         </div>
         <div class="head-item last">
           <img src="./icons/three-bars-white.svg" alt="Menu">
+          <div class="large-menu">
+            <a href="#destinations">Destinations</a>
+            <a href="./">Sign In</a>
+          </div>
         </div>
       </div>
       <div class="hero">
@@ -73,15 +77,15 @@
               <input type="number" class="form-control" id="guests" name="guests" placeholder="2">
             </div>
           </div>
-          <div>
+          
               <button type="submit" class="btn btn-warning">
                   <img src="./icons/arrow-right.svg" alt="">
               </button>
-          </div>
+          
       </form>
       </div>
     </header>
-    <section>
+    <section id="destinations">
       <h2>Destinations</h2>
       <div>
         <p>
@@ -101,7 +105,7 @@
           and sample the local fare at the city's world-famous restaurants.
         </p>
         <p>
-          For those seeking a bit of relaxation, head to the spas and
+          For those seeking a bit of relaxation, <strong>head to the spas</strong> and
           resorts of the English countryside. Indulge in a luxurious
           massage or take a dip in a hot spring. If you're looking for
           something a bit more active, strap on your hiking boots and
@@ -128,24 +132,28 @@
       </ul>
     </section>
     <footer>
-      <h3>Links</h3>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#destinations">Destinations</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
       <div>
-        <h3>Newsletter</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-          euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
-        </p>
+        <h3>Links</h3>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#destinations">Destinations</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="bottom">
+        <div class="news"> 
+          <h3>Newsletter</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+            euismod, nisl nec tincidunt dapibus, magna libero fermentum augu.
+          </p>
+        </div>
         <form>
           <div class="input-group">
-            <input type="email" class="form-control" name="email" id="email">
+            <input type="email" placeholder="Email" class="form-control" name="email" id="email">
             <span class="input-group-text"><img src="./icons/lastpass-tile.svg" alt=""></span>
             <button class="btn btn-success subscribe">Subscribe <img src="./icons/arrow-right-white.svg" alt=""></button>
           </div>

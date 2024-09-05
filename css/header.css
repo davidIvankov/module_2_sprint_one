@@ -1,10 +1,24 @@
 :root {
     --mobile-margin: 16px;
+    --body-text-size-desktop: 14px;
     --color-primary: white;
     --color-secondary: black;
     --hero-text-size-mobile: 56px;
     --body-text-size-mobile: 16px;
-    --heading-text-size-mobile: 24px
+    --heading-text-size-mobile: 24px;
+    --desktop-margin: 16vw;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    color: var(--color-secondary);
+}
+.large-menu {
+    display: none;
 }
 header, section, footer {
     display: flex;
@@ -41,6 +55,7 @@ header {
 }
 
 .heading {
+    animation: fadeIn 1s ease-in-out; 
     font-size: var(--body-text-size-mobile);
     padding: var(--mobile-margin);
     display: flex;
@@ -48,6 +63,15 @@ header {
     justify-content: space-between;
     border-bottom: 1px solid var(--color-primary);
 }
+
+@keyframes fadeIn {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
 .head-item{
     width: 100%;
 }
@@ -78,7 +102,7 @@ header {
     justify-content: center;
     padding: var(--mobile-margin);
     text-shadow: 1px 1px 2px var(--color-secondary);
-    
+    animation: fadeIn 1s ease-in-out; 
 }
 
 h1 {
@@ -106,6 +130,63 @@ h1 {
 
 .hero-form div {
     width: 100%;
+}
+
+@media (min-width: 426px) {
+    body {
+        font-size: var(--body-text-size-desktop);
+    }
+    .small {
+        font-size: var(--body-text-size-mobile);
+    }
+    .last img {
+        display: none;
+    }
+
+    .hero {
+        padding-left: var(--desktop-margin);
+        padding-right: var(--desktop-margin);
+    }
+
+   .hero-form button {
+        align-self: flex-end;
+        padding-left: 20px;
+        padding-right: 20px;
+        max-width: fit-content;
+   } 
+
+    .hero-form{
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    header {
+        height: 100vh;
+        justify-content: space-between;
+    }
+
+    .heading {
+        margin-left: var(--desktop-margin);
+        margin-right: var(--desktop-margin);
+    }
+
+    .large-menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 16px;
+    }
+    .large-menu a {
+        color: var(--color-primary);
+        text-decoration: none;
+    }
+
+    .large-menu a:last-child {
+        background-color: var(--color-primary);
+        color: var(--color-secondary);
+        padding: 10px 20px;
+        border-radius: 25px;
+    }
+    
 }
 
 
